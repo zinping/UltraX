@@ -1,0 +1,7 @@
+#!/bin/sh
+. $(dirname "$0")/_/husky.sh
+
+npm run lingui:generate
+npm run lint-staged
+npm run test:ci
+npm run tscheck
